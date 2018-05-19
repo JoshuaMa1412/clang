@@ -1,0 +1,27 @@
+#include"stdio.h"
+void main()
+{
+	char c;
+	printf("intput a character: ");
+	c=getchar();
+	if(c<32)/*输出字符和数字，如实小于32输出控制字符，若是大于0~9，A~Z，a~z则输出其他的字符，否则就输出这其中的字符*/
+	{
+		printf("this is a control character\n");
+	}
+	else if(c>='0'&&c<='9')
+	{
+		printf("this is a digit\n");
+	}
+	else if(c>='A'&&c<='Z')
+	{
+		printf("this is a capital letter\n");
+	}
+	else if(c>='a'&&c<='z')
+	{
+		printf("this is a small letter\n");
+	}
+	else
+	{
+		printf("this is an other character\n");
+	}
+}/*代码这么写，是因为我觉得更利于观察，当然若是想要简单一些也可以，因为这些只有一个语句，可以不用那些大括号，直接让输出语句连在if或者是else的后面也是可以执行的*/
