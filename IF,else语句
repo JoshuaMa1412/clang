@@ -1,0 +1,13 @@
+#include "stdio.h"
+void main()
+{
+	int a,b,max;/*定义三个值*/
+	printf("intput two number: ");
+	scanf("a=%d,b=%d",&a,&b);
+	max=a;
+	if(max<b)/*如果max小于b，输出b，否则max输出a*/
+	{
+		max=b;
+	}
+	printf("max=%d",max);
+}
