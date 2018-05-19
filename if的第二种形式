@@ -1,0 +1,16 @@
+#include "stdio.h"
+void main()
+{
+	int a,b;
+	printf("intput two numbers: ");
+	scanf("%d,%d",&a,&b);
+	if(a>b)/*输入两个数，若a大于b则输出大的数字，否则输出小的数字*/
+	{
+		printf("max=%d\n",a);
+	}
+	else
+	{
+		printf("max=%d\n",b);
+	}
+}
+/*如有不好的地方需要指点。*/
