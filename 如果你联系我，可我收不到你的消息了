@@ -1,0 +1,15 @@
+#include<stdio.h>
+void main()
+{
+	int a;
+	a = 4;
+	if(a==3)/*可以试试把a==3改为3=a或者是a=3，有各种各样的情况都是可尝试的*/
+	{
+		printf("a equals 3!!\n");
+
+	}
+	else
+	{
+		printf("a is %d\n",a);
+	}
+}
