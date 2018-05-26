@@ -1,0 +1,16 @@
+#include "stdio.h"
+main()
+{
+	double a,b;
+	char c;
+	printf("input expression: a+(-,*,/)b\n");
+	scanf("%lf%c%lf",&a,&c,&b);
+	switch(c)
+	{
+	case '+':printf("%lf\n",a+b);break;
+	case '-':printf("%lf\n",a-b);break;
+	case '*':printf("%lf\n",a*b);break;
+	case '/':printf("%lf\n",a/b);break;
+	default:printf("intput error\n");
+	}
+}/*输出加减乘除判断其结果*/
