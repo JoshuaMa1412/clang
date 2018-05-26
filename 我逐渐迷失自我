@@ -1,0 +1,8 @@
+#include"stdio.h"
+main()
+{
+	char ch;
+	scanf("%c",&ch);
+	ch=(ch>='A' && ch<='Z')?(ch+32):ch;
+	printf("%c\n",ch);
+}/*判断是否为大写字母，如果是则转换为小写*/
