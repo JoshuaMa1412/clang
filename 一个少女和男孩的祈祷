@@ -1,0 +1,23 @@
+#include"stdio.h"
+main()
+{
+	int a,b,c,max,min;
+	printf("intput three numbers:  ");
+	scanf("%d%d%d",&a,&b,&c);
+	if(a>b)
+	{
+		max=a;
+		min=b;
+	}
+	else
+	{
+		min=a;
+		max=b;
+	}
+	if(max<c)
+		max=c;
+	else
+		if(min>c)
+			min=c;
+		printf("max=%d\nmin=%d\n",max,min);
+}/*输入三个整数，输出其中的最大值和最小值*/
