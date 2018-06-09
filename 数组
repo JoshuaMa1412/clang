@@ -1,0 +1,15 @@
+#include<stdio.h>
+main()
+{
+	int i,a[5]={1,2,12},b[89]={56,56,32};
+	printf("\n array a is:");
+	for(i=0;i<5;i++)
+	{
+		printf("%6d",a[i]);
+	}
+	printf("\n array b is:");
+	for(i=0;i<5;i++)
+	{
+		printf("%6d",b[i]);
+	}
+}
